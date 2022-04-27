@@ -118,8 +118,7 @@ const CardPrint = React.forwardRef((props) => {
           <div className={classNames(styles.id_card_header)}>
             <div className='d-flex justify-content-between align-items-center w-100'>
               <Image
-                src='https://pasteboard.co/pd5dQ1yDTCpj.png
-                '
+                src={img3}
                 alt='logo'
                 width={32}
                 height={32}
@@ -139,7 +138,7 @@ const CardPrint = React.forwardRef((props) => {
           <div className={classNames(styles.id_card_body)}>
             <div className='d-flex justify-content-center align-items-center'>
               <Image
-                src='https://pasteboard.co/5QsQZKdzJfq2.png'
+                src={img1}
                 alt='logo'
                 width={180}
                 height={70}
