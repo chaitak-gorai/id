@@ -5,7 +5,7 @@ import { Card, Spinner, Container, Row, Col } from 'react-bootstrap';
 import { OnResultFunction, QrReader } from 'react-qr-reader';
 import FormatName from '../helpers/FormatName';
 import classNames from 'classnames';
-import styles from '../CardPrint.module.scss';
+import styles from '../Database.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Scanner = () => {
@@ -112,10 +112,10 @@ const Scanner = () => {
         />
       </div>
 
-      <Container className='milestone-wrapper'>
+      <Container className='milestone-wrapper pt-3'>
         <Row>
           {MILESTONES.map((entity) => (
-            <Col className='col-6' key={entity}>
+            <Col className='col-6 py-2 pl-3' key={entity}>
               <input
                 type='radio'
                 name='sel'
@@ -145,9 +145,9 @@ const Scanner = () => {
         <div>
           {isAllowed ? (
             isAllowed.status ? (
-              <p>Allowed</p>
+              <p className={classNames(styles.green)}>Allowed</p>
             ) : (
-              <p>Not Allowed</p>
+              <p className={classNames(styles.red)}>Not Allowed</p>
             )
           ) : (
             <br />
