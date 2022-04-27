@@ -65,7 +65,7 @@ const CardPrint = React.forwardRef((props) => {
       console.log(d);
       console.log(id);
       // onButtonClick();
-      // handlePrint();
+      handlePrint();
     }
   }, [params.id]);
 

@@ -18,8 +18,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { IAdmin, IAttendee } from '../../../types';
 // import { formatName, parseCookies } from '../../../utils/helpers';
 import styles from '../CardPrint.module.scss';
-import { async } from 'regenerator-runtime';
-import { toPng } from 'html-to-image';
+
+import { toJpeg, toPng } from 'html-to-image';
 
 // export const getServerSideProps = async (context) => {
 //   // const cookies = parseCookies(context.req);
@@ -117,16 +117,16 @@ const CardPrint = React.forwardRef((props) => {
         >
           <div className={classNames(styles.id_card_header)}>
             <div className='d-flex justify-content-between align-items-center w-100'>
-              <Image
-                src={img3}
+              <img
+                src='https://i.postimg.cc/X7QXLYyw/RSSDAI.png'
                 alt='logo'
                 width={32}
                 height={32}
                 layout='fixed'
                 objectFit='contain'
               />
-              <Image
-                src={img2}
+              <img
+                src='https://i.postimg.cc/j57JkYrR/ESB.png'
                 alt='lesbo'
                 width={32}
                 height={32}
@@ -137,8 +137,8 @@ const CardPrint = React.forwardRef((props) => {
           </div>
           <div className={classNames(styles.id_card_body)}>
             <div className='d-flex justify-content-center align-items-center'>
-              <Image
-                src={img1}
+              <img
+                src='https://i.postimg.cc/XqjDk8Tc/crescendo-transparent.png'
                 alt='lcre'
                 width={180}
                 height={70}
