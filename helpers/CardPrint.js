@@ -59,8 +59,8 @@ const CardPrint = React.forwardRef((props) => {
     setAttendee(d);
     console.log(d);
     console.log(id);
-    // onButtonClick();
-    handlePrint();
+    onButtonClick();
+    // handlePrint();
   }, [id]);
 
   const handlePrint = useReactToPrint({
@@ -127,7 +127,7 @@ const CardPrint = React.forwardRef((props) => {
               />
               <Image
                 src={img2}
-                alt='logo'
+                alt='lesbo'
                 width={32}
                 height={32}
                 layout='fixed'
@@ -139,7 +139,7 @@ const CardPrint = React.forwardRef((props) => {
             <div className='d-flex justify-content-center align-items-center'>
               <Image
                 src={img1}
-                alt='logo'
+                alt='lcre'
                 width={180}
                 height={70}
                 layout='fixed'
