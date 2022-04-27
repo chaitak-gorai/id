@@ -1,0 +1,109 @@
+@media print {
+  .id_card {
+    size: 76mm 95mm; /* landscape */
+    width: 76mm;
+    height: 95mm;
+
+    /* you can also specify margins here: */
+    margin: 25mm;
+    margin-right: 45mm; /* for compatibility with both A4 and Letter */
+  }
+}
+
+.id_card {
+  width: 72mm;
+  height: 90mm;
+  padding: 5mm;
+  // margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  .pink {
+    background: linear-gradient(#ffa3a4, #ffffff);
+  }
+  .green {
+    background: linear-gradient(#c8f8a7, #ffffff);
+  }
+}
+
+.id_card_header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    color: #fff;
+    font-size: 6mm;
+    margin-bottom: 0;
+    margin-left: 4mm;
+  }
+}
+
+.id_card_body {
+  padding: 4mm;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.label {
+  font-size: 2mm;
+  color: #424242;
+  font-weight: 400;
+  margin-bottom: 1mm;
+  text-align: center;
+}
+
+.name {
+  font-size: 5mm;
+  font-weight: 700;
+  color: #424242;
+  margin-bottom: 1mm;
+  text-align: center;
+}
+
+.value {
+  font-size: 4mm;
+  font-weight: 600;
+  color: #424242;
+  margin-bottom: 1mm;
+  text-align: right;
+}
+
+.identity {
+  font-size: 8mm;
+  font-weight: 800;
+  margin-bottom: 1mm;
+  text-align: center;
+}
+
+.id_card_footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+
+  > div:nth-child(1) {
+    background: #17b978;
+    width: 70%;
+    height: 7mm;
+    border-bottom-right-radius: 7mm;
+  }
+
+  > div:nth-child(2) {
+    background: #a7ff83;
+    width: 30%;
+    height: 7mm;
+    border-top-left-radius: 7mm;
+  }
+}
+
+.red {
+  background-color: red;
+  border-color: red;
+}
+.green {
+  background-color: green;
+  border-color: green;
+}
