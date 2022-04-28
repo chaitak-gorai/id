@@ -8,7 +8,7 @@ import styles from '../Database.module.scss';
 const Datasheet = () => {
   const [data, setData] = useState(null);
   useEffect(async () => {
-    await fetch('https://secret-caverns-07392.herokuapp.com/user/all')
+    await fetch('https://secret-caverns-07393.herokuapp.com/user/all')
       .then((res) => res.json())
       .then((result) => {
         setData(result);
@@ -35,6 +35,12 @@ const Datasheet = () => {
     <>
       <Container className='py-5'>
         <Row>
+          <Col md={3} className='py-2 text-center font-weight-600'>
+            Registration:{' '}
+            {data
+              ? data.filter((item) => item.registration === true).length
+              : 0}
+          </Col>
           <Col md={3} className='py-2 text-center font-weight-600'>
             Workshop:{' '}
             {data ? data.filter((item) => item.workshop === true).length : 0}

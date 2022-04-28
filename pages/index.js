@@ -55,7 +55,7 @@ const Scanner = () => {
       });
       console.log(formData, 'formData');
       await fetch(
-        `https://secret-caverns-07392.herokuapp.com/user/update?${query}`,
+        `https://secret-caverns-07393.herokuapp.com/user/update?${query}`,
         {
           method: 'POST',
           headers: {

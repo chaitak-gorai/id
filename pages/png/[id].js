@@ -58,7 +58,7 @@ const PngPrint = React.forwardRef((props) => {
   useEffect(async () => {
     if (params.id) {
       const response = await fetch(
-        `https://secret-caverns-07392.herokuapp.com/user/registrationId?registrationId=${params.id}`
+        `https://secret-caverns-07393.herokuapp.com/user/registrationId?registrationId=${params.id}`
       );
       const d = await response.json();
       setAttendee(d);
